@@ -4,7 +4,7 @@ import app from "../src/app.js";
 let token;
 let taskId;
 
-beforeAll(async () => {
+beforeEach(async () => {
   // Register
   await request(app)
     .post("/api/auth/register")
